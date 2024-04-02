@@ -9,7 +9,7 @@ pipeline {
     stage('Checkout') {
       steps {
         sh 'echo passed'
-        git 'https://github.com/rahultdav/Jenkins-Zero-To-Hero-argoCD.git'
+        git branch: 'main', url: 'https://github.com/rahultdav/Jenkins-Zero-To-Hero.git'
       }
     }
     stage('Build and Test') {
